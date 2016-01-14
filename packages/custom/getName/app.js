@@ -11,20 +11,24 @@ var GetName = new Module('getName');
  * All MEAN packages require registration
  * Dependency injection is used to define required modules
  */
-GetName.register(function(app, auth, database) {
+GetName.register(function(app, auth, database, system) {
 
   //We enable routing. By default the Package Object is passed to the routes
   GetName.routes(app, auth, database);
 
   //We are adding a link to the main menu for all authenticated users
   GetName.menus.add({
-    title: 'getName example page',
-    link: 'getName example page',
+    title: 'GET name',
+    link: 'Get name page',
+    //roles: ['authenticated', 'anonymous'],
     roles: ['authenticated'],
-    menu: 'main'
+    menu: 'getNameMenu'
   });
-  
+
+  app.set('views', __dirname + '/server/views');
+
   GetName.aggregateAsset('css', 'getName.css');
+  GetName.angularDependencies(['mean.system']);
 
   /**
     //Uncomment to use. Requires meanio@0.3.7 or above

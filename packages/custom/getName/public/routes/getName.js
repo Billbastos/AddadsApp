@@ -1,10 +1,7 @@
 'use strict';
 
-angular.module('mean.getName').config(['$stateProvider',
-  function($stateProvider) {
-    $stateProvider.state('getName example page', {
-      url: '/getName/example',
-      templateUrl: 'getName/views/index.html'
-    });
+angular.module('mean.getName').config(['$viewPathProvider','$stateProvider',
+  function($viewPathProvider, $stateProvider) {
+    $viewPathProvider.override('system/views/index.html', 'getName/views/index.html');
   }
 ]);
