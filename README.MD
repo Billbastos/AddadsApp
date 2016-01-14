@@ -30,13 +30,7 @@ $ npm install -g mean-cli
 Mean supports the gulp task runner for various services which are applied on the code.
 To start your application run - 
 ```bash
-$ gulp
-```
-
-
-### Running 
-If you have a rails, node, or other mean project already running, you may need to use a different port. You can set the port and start your new mean project with one command:
-```bash
+$ npm install
 $ gulp
 ```
 
@@ -44,7 +38,6 @@ Then, open a browser:
 ```bash
   http://localhost:3000
 ```
-
 
 * Updating Bower:
 ```bash
@@ -85,26 +78,6 @@ $ mean help
 ```bash
 $ mean help [command]
 ```
-
-
-### Packages
-#### Management
- <p class="alert alert-warning">All of the remaining of the commands must be run from the root folder of your MEAN application.</p>
-  <p>Contributed MEAN packages can be installed or uninstalled via the CLI. Also, currently installed modules can be viewed with the <code>list</code> command.</p>
-
-```bash
-$ mean list
-$ mean install <module>
-$ mean uninstall <module>
-```
-
-  <p class="alert alert-info">Mean packages installed via the installer are found in <i>/node_modules</i></p>
-#### Search
-To find new packages run the *mean search* command
-```bash
-$ mean search [packagename]
-```
-`mean search` will return all of the available packages, `mean search [packagename]` will filter the search results.
 
 ## License
 We believe that mean should be free and easy to integrate within your existing projects so we chose [The MIT License](http://opensource.org/licenses/MIT)
