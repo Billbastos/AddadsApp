@@ -58,26 +58,5 @@ $ npm cache clean
 $ bower cache clean
 ```
 
-
-## Technologies
-
-### The MEAN stack
-
-MEAN is an acronym for *M*ongo, *E*xpress.js , *A*ngular.js and *N*ode.js
-
-## CLI
-### Overview
-
-The MEAN CLI is a simple Command Line Interface for installing and managing MEAN applications. As a core module of the Mean.io project, it provides a number of useful tools to make interaction with your MEAN application easier, with features such as: scaffolding, module creation and admin, status checks, and user management.
-```bash
-$ mean
-$ mean --help
-$ mean help
-```
-  <code>mean help</code> can also be used in conjunction with any command to get more information about that particular functionality. For example, try <code>mean help init</code> to see the options for init
-```bash
-$ mean help [command]
-```
-
 ## License
 We believe that mean should be free and easy to integrate within your existing projects so we chose [The MIT License](http://opensource.org/licenses/MIT)
