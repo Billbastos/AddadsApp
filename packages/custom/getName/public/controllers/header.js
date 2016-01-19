@@ -1,3 +1,4 @@
+/*
 'use strict';
 
 angular.module('mean.getName').controller('gNHeaderController', ['$scope', '$rootScope', 'Menus', 'MeanUser', '$state',
@@ -59,3 +60,4 @@ angular.module('mean.getName').controller('gNHeaderController', ['$scope', '$roo
 
   }
 ]);
+*/
